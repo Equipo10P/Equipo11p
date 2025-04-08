@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capacitación PEC - CBTis 145</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init("IJxG85h0X524BvHqV");
+    });
+  </script>
+</head>
+<body>
+  <nav id="menuNav" style="display:none;">
+    <ul>
+      <li><a href="#organizacion" onclick="mostrarSeccion('organizacion')">Organización</a></li>
+      <li><a href="#prototipo" onclick="mostrarSeccion('prototipo')">Prototipo</a></li>
+      <li><a href="#graficas" onclick="mostrarSeccion('graficas')">Gráficas</a></li>
+    </ul>
+  </nav>
+  <main id="app"></main>
+  <script src="script.js"></script>
+</body>
+</html>
